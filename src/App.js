@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import { Display } from "./Display";
+import {Header} from "./stories/Header";
+import {Button} from "./stories/Button";
+import {Card} from "./stories/Card";
+const App = () => {
+    return (
+        <React.Fragment>
+          <Header/>
+            <Display />
+            <Card />
+            <Button color="red">
+                <p>signin</p>
+                <p>login</p>
+                <p>submit</p>
+            </Button>
+        </React.Fragment>
+    )
 }
+
 
 export default App;
