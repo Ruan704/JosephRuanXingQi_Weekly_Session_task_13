@@ -10,7 +10,7 @@ const App = () => {
         <React.Fragment>
           <Header/>
             <Display />
-            <Card />
+            {/* <Card /> */}
             <Button color="red">
                 <p>signin</p>
                 <p>login</p>

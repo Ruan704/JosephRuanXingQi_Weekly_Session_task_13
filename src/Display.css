@@ -1,0 +1,9 @@
+.del-button{
+    margin-top: 10px;
+    background-color: red;
+    font-weight: bolder;
+    border: none;
+    padding: 4px;
+    cursor:pointer;
+    color: white;
+}
